@@ -4,6 +4,7 @@
     --fonte-principal: 'Montserrat', sans-serif;
     --cor-bg: #6D9886;
     --cor-principal: #F2E7D5;
+    --cor-bg-over: #393E46;
  }
 
  body {
@@ -53,3 +54,12 @@
    border-radius: 5px;
    margin-top: 50px;
  }
+
+.btn-jogar-over {
+   padding: 8px 15px;
+   border: 1px solid var(--cor-principal);
+   background: var(--cor-bg-over);
+   color: var(--cor-principal);
+   border-radius: 5px;
+   margin-top: 50px;
+}
