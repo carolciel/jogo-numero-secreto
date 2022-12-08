@@ -41,7 +41,7 @@ function chuteForInvalido(numero) {
             <h3>O jogo acabou!</h3>
             <button id="jogar-novamente" class="btn-jogar-over">Jogar Novamente</button>
         `
-    }else {
+    } else {
         return Number.isNaN(numero);
     }
     
@@ -56,7 +56,3 @@ document.body.addEventListener('click', e => {
         window.location.reload()
     }
 })
-
-function fimDeJogo(){
-    
-}
