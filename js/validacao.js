@@ -1,5 +1,6 @@
 function verificaValorValido(chute) {
     const numero = +chute;
+    
 
     if(chuteForInvalido(numero)) {
         elementoChute.innerHTML += '<div>Valor inválido</div>';
@@ -29,10 +30,21 @@ function verificaValorValido(chute) {
             <div>O número secreto é maior <i class="fa-solid fa-arrow-up-long"></i></div>
         `
     }
+
 }
 
 function chuteForInvalido(numero) {
-    return Number.isNaN(numero);
+    const frase = chute;
+    if(frase === "game over"){
+        document.body.style.backgroundColor = '#393E46';
+        document.body.innerHTML = `
+            <h3>O jogo acabou!</h3>
+            <button id="jogar-novamente" class="btn-jogar-over">Jogar Novamente</button>
+        `
+    }else {
+        return Number.isNaN(numero);
+    }
+    
 }
 
 function numeroForMaiorOuMenorQuePermitido(numero) {
@@ -44,3 +56,7 @@ document.body.addEventListener('click', e => {
         window.location.reload()
     }
 })
+
+function fimDeJogo(){
+    
+}
